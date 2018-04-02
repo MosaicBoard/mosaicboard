@@ -1,19 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
+
+import reducers from './reducers';
+import { routes } from './routes';
+
+function configureStore(initialState) {
+  const enhancer = compose(applyMiddleware(thunk));
+
+  return createStore(reducers, initialState, enhancer);
+}
+
+const store = configureStore({});
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+    return(
+      <Provider store={store}>
+        <Router>
+          <Switch>
+            {routes.map((route, index) => {
+              return <Route key={index} path={route.path} component={route.component} exact={route.exact} />
+            })}
+          </Switch>
+        </Router>
+      </Provider>
     );
   }
 }
