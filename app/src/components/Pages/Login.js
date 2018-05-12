@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Empty from '../Layouts/Empty';
+import Empty from '../Layout/Empty';
 import { Button } from '../UI/Button';
 
 class Login extends Component {

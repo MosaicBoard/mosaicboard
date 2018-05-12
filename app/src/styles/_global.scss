@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $color-font;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $color-font;
+  text-decoration: none;
+}
+
+.md-icon {
+  display: inline-block;
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+  font-family: $font-icon;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1;
+  text-transform: none;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga' 1;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -10px;
+
+  flex-wrap: wrap;
+}
+
+.icon {
+  margin: 10px;
+  padding: 16px;
+  border: 1px solid rgba($color-black, 0.06);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -15px;
+
+   > div {
+    flex-grow: 1;
+    width: 50%;
+    margin: 0 15px;
+  }
+}
