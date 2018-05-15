@@ -1,4 +1,7 @@
 @import 'susy/sass/susy';
 @import './vendors/normalize';
 @import './helpers/variables';
-@import './global';
+@import './base';
+
+@import './components/forms';
+@import './components/buttons';
