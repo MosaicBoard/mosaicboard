@@ -14,7 +14,7 @@ class ResetPassword extends Component {
 
           <form>
             <div className="form-group">
-              <label>Email</label>
+              <label for="email">Email</label>
               <input type="email" name="email" className="form-control" />
             </div>
 
@@ -23,7 +23,9 @@ class ResetPassword extends Component {
                 <NavLink to="/">← Back to login</NavLink>
               </div>
 
-              <button type="submit" className="button button-primary button-right">Reset Password</button>
+              <button type="submit" className="button button-primary button-right">
+                Reset Password
+              </button>
             </div>
           </form>
         </div>

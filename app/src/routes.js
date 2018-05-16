@@ -1,5 +1,6 @@
 import Login from './components/Pages/Login';
 import ResetPassword from './components/Pages/ResetPassword';
+import SignUp from './components/Pages/SignUp';
 
 export const routes = [
   {
@@ -17,5 +18,13 @@ export const routes = [
     breadcrumb_link: false,
     exact: true,
     component: ResetPassword
+  },
+  {
+    path: '/signup',
+    title: 'SignUp',
+    breadcrumb: 'SignUp',
+    breadcrumb_link: false,
+    exact: true,
+    component: SignUp
   }
 ];

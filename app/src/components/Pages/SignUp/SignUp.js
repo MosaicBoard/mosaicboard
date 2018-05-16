@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 import Empty from '../../Layout/Empty';
 
-import './Login.css';
+import './SignUp.css';
 
-class Login extends Component {
+class SignUp extends Component {
   render() {
     return (
       <Empty>
@@ -14,8 +14,18 @@ class Login extends Component {
 
           <form>
             <div className="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" className="form-control" />
+            </div>
+
+            <div className="form-group">
               <label for="email">Email</label>
               <input type="email" name="email" className="form-control" />
+            </div>
+
+            <div className="form-group">
+              <label for="re-enter-email">Re-enter email</label>
+              <input type="email" name="re-enter-email" className="form-control" />
             </div>
 
             <div className="form-group">
@@ -23,26 +33,25 @@ class Login extends Component {
               <input type="password" name="password" className="form-control" />
             </div>
 
+            <div className="form-group">
+              <label for="re-enter-email">Re-enter password</label>
+              <input type="password" name="re-enter-email" className="form-control" />
+            </div>
+
             <div className="form-group form-group-button">
               <div className="form-group-button-description">
-                <NavLink to="/reset_password">Forgot Password?</NavLink>
+                Have an account? <NavLink to="/">Log in</NavLink>
               </div>
 
               <button type="submit" className="button button-primary button-right">
-                Login
+                Create Account
               </button>
             </div>
           </form>
-
-          <div className="btn-signup">
-            <NavLink to="/signup">
-              Don't have a login? Click here to sign up!
-            </NavLink>
-          </div>
         </div>
       </Empty>
     );
   }
 }
 
-export default Login;
+export default SignUp;
