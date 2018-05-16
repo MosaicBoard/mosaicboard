@@ -1,0 +1,84 @@
+@import 'styles/helpers/variables';
+
+.toolbar {
+  position: relative;
+  z-index: 1000;
+  width: 64px;
+  min-width: 64px;
+  color: #fff;
+  background-color: $color-primary;
+
+  img {
+    max-width: 22px;
+  }
+
+  .logo {
+    display: block;
+    height: 89px;
+    margin: 0 0 23px 0;
+    line-height: 104px;
+    border-bottom: 1px solid rgba(#fff, 0.04);
+    background-color: rgba(#fff, 0.04);
+    text-align: center;
+
+    i {
+      width: 30px;
+      height: 30px;
+      font-size: 30px;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: block;
+      width: 64px;
+      padding: 9px 0;
+      color: #fff;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    li {
+      margin: 0 0 5px 0;
+    }
+
+    ul,
+    span,
+    strong {
+      display: none;
+    }
+  }
+
+  strong {
+    display: none;
+  }
+
+  .bottom {
+    @media (min-width: $media-lg) {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .navigation {
+    display: none;
+
+    @media (max-width: $media-lg) {
+      display: block;
+    }
+  }
+}
+
+.toolbar-inner {
+  width: 64px;
+  @media (min-width: $media-lg) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

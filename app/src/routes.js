@@ -1,6 +1,7 @@
 import Login from './components/Pages/Login';
 import ResetPassword from './components/Pages/ResetPassword';
 import SignUp from './components/Pages/SignUp';
+import Dashboard from './components/Pages/Dashboard';
 
 export const routes = [
   {
@@ -26,5 +27,13 @@ export const routes = [
     breadcrumb_link: false,
     exact: true,
     component: SignUp
+  },
+  {
+    path: '/dashboard',
+    title: 'Dashboard',
+    breadcrumb: 'Dashboard',
+    breadcrumb_link: true,
+    exact: true,
+    component: Dashboard
   }
 ];

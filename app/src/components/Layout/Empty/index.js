@@ -1,1 +1,1 @@
-export { default } from './Empty.js';
+export { default } from './Empty';

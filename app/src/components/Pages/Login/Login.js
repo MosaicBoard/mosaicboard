@@ -28,9 +28,15 @@ class Login extends Component {
                 <NavLink to="/reset_password">Forgot Password?</NavLink>
               </div>
 
+              {/*
               <button type="submit" className="button button-primary button-right">
                 Login
               </button>
+              */}
+
+              <NavLink to="/dashboard" className="button button-primary button-right">
+                Login
+              </NavLink>
             </div>
           </form>
 

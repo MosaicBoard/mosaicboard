@@ -1,1 +1,1 @@
-export { default } from './ResetPassword.js';
+export { default } from './ResetPassword';
