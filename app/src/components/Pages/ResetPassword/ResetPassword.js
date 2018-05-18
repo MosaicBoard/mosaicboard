@@ -3,8 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 import Empty from '../../Layout/Empty';
 
-import './ResetPassword.css';
-
 class ResetPassword extends Component {
   render() {
     return (

@@ -3,8 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 import Empty from '../../Layout/Empty';
 
-import './SignUp.css';
-
 class SignUp extends Component {
   render() {
     return (
