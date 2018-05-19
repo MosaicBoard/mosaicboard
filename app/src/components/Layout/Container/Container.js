@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import Toolbar from '../../Elements/Toolbar';
 import Sidebar from '../../Elements/Sidebar';
+import PageTitle from '../../Elements/PageTitle';
 
 import './Container.css';
 
@@ -14,6 +15,8 @@ class Container extends Component {
         <Sidebar />
 
         <div className="main">
+          <PageTitle />
+
           <div className="content">
             {this.props.children}
           </div>

@@ -1,0 +1,30 @@
+.menu {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  display: flex;
+  flex-direction: row;
+  transform: translateY(-50%);
+}
+
+.menu-item {
+  display: block;
+  margin: 0 20px;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+
+  .has-page-header & {
+    color: #fff;
+  }
+
+  span {
+    display: block;
+    font-size: 11px;
+    line-height: 1;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
