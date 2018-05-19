@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Toolbar from '../../Elements/Toolbar';
+import Sidebar from '../../Elements/Sidebar';
 
 import './Container.css';
 
@@ -10,6 +11,7 @@ class Container extends Component {
     return (
       <div className="page-inner">
         <Toolbar />
+        <Sidebar />
 
         <div className="main">
           <div className="content">

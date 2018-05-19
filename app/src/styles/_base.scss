@@ -62,3 +62,29 @@ a {
   display: flex;
   min-height: 100%;
 }
+
+.content-inner {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 30px 60px;
+
+  &.no-padding-left {
+    padding-left: 0;
+  }
+
+  &.no-padding-right {
+    padding-right: 0;
+  }
+
+  &.no-padding-top {
+    padding-top: 0;
+  }
+
+  @media (max-width: $media-lg) {
+    width: calc(100vw - 319px);
+  }
+
+  @media (max-width: $media-md) {
+    padding: 30px 30px;
+  }
+}

@@ -1,0 +1,130 @@
+@import 'styles/helpers/variables';
+
+.sidebar {
+  position: relative;
+  z-index: 100;
+  box-sizing: border-box;
+  width: 260px;
+  min-width: 260px;
+
+  // TODO: Update this --v
+  height: 89px;
+  min-height: 89px;
+
+  padding: 20px 10px;
+  background-color: rgba(#000, 0.04);
+
+  @media (max-width: $media-lg) {
+    display: none;
+  }
+
+  h1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .navigation > strong {
+    display: block;
+    margin: 0 0 5px 0;
+    padding: 0 14px;
+    font-size: 11px;
+    line-height: 41px;
+    opacity: 0.8;
+    text-transform: uppercase;
+  }
+
+  ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    ul {
+      margin: 5px 0 0 0;
+      padding: 0 0 0 48px;
+
+      &:before {
+        position: absolute;
+        top: 7px;
+        bottom: 7px;
+        left: 22px;
+        display: block;
+        width: 0;
+        opacity: 0.2;
+        border-left: 1px dashed $color-font;
+        content: '';
+      }
+
+      a {
+        display: block;
+        max-height: 41px;
+        padding: 0;
+        line-height: 41px;
+
+        &.active {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  li {
+    position: relative;
+    margin: 0 0 8px 0;
+  }
+
+  a {
+    display: block;
+    padding: 10px 14px;
+    line-height: 20px;
+    transition: all 0.2s ease;
+
+    &.active {
+      color: $color-font;
+      background-color: rgba(#000, 0.04);
+    }
+
+    &:hover {
+      color: $color-font;
+    }
+
+    i {
+      margin: 0 10px 0 0;
+      color: $color-font;
+      vertical-align: middle;
+    }
+
+    span {
+      vertical-align: middle;
+    }
+
+    strong {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      display: block;
+      width: 5px;
+      height: 5px;
+      font-size: 0;
+      border-radius: 50%;
+      background-color: $color-red;
+      transform: translateY(-50%);
+
+      &:after {
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        display: block;
+        width: 9px;
+        height: 9px;
+        border: 2px solid rgba($color-red, 0.3);
+        border-radius: 50%;
+        content: '';
+      }
+    }
+  }
+}
