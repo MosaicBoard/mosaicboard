@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Menu from '../Menu';
+import Menu from '../../UI/Menu';
 
 import './PageTitle.css';
 

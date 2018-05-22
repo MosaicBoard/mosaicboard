@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-// TODO: See the menu class
-
 import './Menu.css';
 
 class Menu extends Component {
