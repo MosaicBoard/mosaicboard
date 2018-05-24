@@ -23,7 +23,11 @@ class SignUp extends Component {
 
             <div className="form-group">
               <label htmlFor="re-enter-email">Re-enter email</label>
-              <input type="email" name="re-enter-email" className="form-control" />
+              <input
+                type="email"
+                name="re-enter-email"
+                className="form-control"
+              />
             </div>
 
             <div className="form-group">
@@ -33,7 +37,11 @@ class SignUp extends Component {
 
             <div className="form-group">
               <label htmlFor="re-enter-email">Re-enter password</label>
-              <input type="password" name="re-enter-email" className="form-control" />
+              <input
+                type="password"
+                name="re-enter-email"
+                className="form-control"
+              />
             </div>
 
             <div className="form-group form-group-button">
@@ -41,7 +49,10 @@ class SignUp extends Component {
                 Have an account? <NavLink to="/">Log in</NavLink>
               </div>
 
-              <button type="submit" className="button button-primary button-right">
+              <button
+                type="submit"
+                className="button button-primary button-right"
+              >
                 Create Account
               </button>
             </div>

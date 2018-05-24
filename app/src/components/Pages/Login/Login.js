@@ -34,7 +34,10 @@ class Login extends Component {
               </button>
               */}
 
-              <NavLink to="/dashboard" className="button button-primary button-right">
+              <NavLink
+                to="/dashboard"
+                className="button button-primary button-right"
+              >
                 Login
               </NavLink>
             </div>

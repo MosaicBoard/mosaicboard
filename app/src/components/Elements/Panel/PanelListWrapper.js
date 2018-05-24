@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 
 class PanelListWrapper extends Component {
   render() {
-    return (
-      <div className="panel-list">
-        {this.props.children}
-      </div>
-    );
+    return <div className="panel-list">{this.props.children}</div>;
   }
 }
 

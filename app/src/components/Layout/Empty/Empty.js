@@ -7,9 +7,7 @@ class Empty extends Component {
   render() {
     return (
       <div className="page-empty">
-        <div className="page-empty-content">
-          {this.props.children}
-        </div>
+        <div className="page-empty-content">{this.props.children}</div>
       </div>
     );
   }

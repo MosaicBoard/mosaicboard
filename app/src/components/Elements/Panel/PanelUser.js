@@ -9,16 +9,34 @@ class PanelUser extends Component {
   render() {
     return (
       <div className="panel-user">
-        {this.props.image ? <div className="panel-user-avatar" style={{
-          backgroundImage: `url${this.props.image}`
-        }}></div> : ''}
+        {this.props.image ? (
+          <div
+            className="panel-user-avatar"
+            style={{
+              backgroundImage: `url${this.props.image}`
+            }}
+          />
+        ) : (
+          ''
+        )}
 
         <div className="panel-user-content">
-          {this.props.name ? <div className="panel-user-name">{this.props.name}</div> : ''}
+          {this.props.name ? (
+            <div className="panel-user-name">{this.props.name}</div>
+          ) : (
+            ''
+          )}
 
-          {this.props.subtitle ? <div className="panel-user-subtitle">{this.props.subtitle}</div> : ''}
+          {this.props.subtitle ? (
+            <div className="panel-user-subtitle">{this.props.subtitle}</div>
+          ) : (
+            ''
+          )}
 
-          <div className="panel-user-action" onClick={this.toggleBodyClass.bind(this)}>
+          <div
+            className="panel-user-action"
+            onClick={this.toggleBodyClass.bind(this)}
+          >
             <i className="md-icon">close</i>
           </div>
         </div>

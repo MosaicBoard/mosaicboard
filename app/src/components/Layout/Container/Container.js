@@ -17,10 +17,7 @@ class Container extends Component {
 
         <div className="main">
           <PageTitle />
-
-          <div className="content">
-            {this.props.children}
-          </div>
+          <div className="content">{this.props.children}</div>
         </div>
 
         <div className="content-side-wrapper">

@@ -21,7 +21,10 @@ class ResetPassword extends Component {
                 <NavLink to="/">← Back to login</NavLink>
               </div>
 
-              <button type="submit" className="button button-primary button-right">
+              <button
+                type="submit"
+                className="button button-primary button-right"
+              >
                 Reset Password
               </button>
             </div>

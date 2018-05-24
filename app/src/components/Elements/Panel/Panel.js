@@ -15,7 +15,11 @@ class Panel extends Component {
   render() {
     return (
       <PanelContainer>
-        <PanelUser name="Breno Polanski" subtitle="Meteorite BI" image="avatar.png" />
+        <PanelUser
+          name="Breno Polanski"
+          subtitle="Meteorite BI"
+          image="avatar.png"
+        />
 
         <PanelListWrapper>
           <PanelListTitle>Help</PanelListTitle>

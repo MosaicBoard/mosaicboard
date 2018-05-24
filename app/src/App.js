@@ -25,12 +25,19 @@ const store = configureStore({});
 
 class App extends Component {
   render() {
-    return(
+    return (
       <Provider store={store}>
         <Router>
           <Switch>
             {routes.map((route, index) => {
-              return <Route key={index} path={route.path} component={route.component} exact={route.exact} />
+              return (
+                <Route
+                  key={index}
+                  path={route.path}
+                  component={route.component}
+                  exact={route.exact}
+                />
+              );
             })}
           </Switch>
         </Router>

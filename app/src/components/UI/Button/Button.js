@@ -5,7 +5,12 @@ import { NavLink } from 'react-router-dom';
 class Button extends Component {
   render() {
     return (
-      <NavLink to={this.props.to ? this.props.to : ''} className={this.props.classes ? `${this.props.classes} button` : 'button'}>
+      <NavLink
+        to={this.props.to ? this.props.to : ''}
+        className={
+          this.props.classes ? `${this.props.classes} button` : 'button'
+        }
+      >
         {this.props.children}
       </NavLink>
     );
