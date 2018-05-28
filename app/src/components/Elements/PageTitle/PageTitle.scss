@@ -1,13 +1,17 @@
+/**
+ * Copyright (c) 2018-present, MosaicBoard.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 @import 'susy/sass/susy';
 @import 'styles/helpers/variables';
 
 .page-title {
   position: relative;
-
-  // TODO: Update this --v
   height: 45px;
   min-height: 45px;
-
   margin: 0;
   padding: 22px 60px;
   border-bottom: 1px solid rgba(#000, 0.06);
