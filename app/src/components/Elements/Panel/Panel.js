@@ -10,6 +10,7 @@ import PanelActionWrapper from './PanelActionWrapper';
 import PanelAction from './PanelAction';
 
 import './Panel.css';
+import avatar from '../../../images/avatar.jpeg';
 
 class Panel extends Component {
   render() {
@@ -18,7 +19,7 @@ class Panel extends Component {
         <PanelUser
           name="Breno Polanski"
           subtitle="Meteorite BI"
-          image="avatar.png"
+          image={avatar}
         />
 
         <PanelListWrapper>
@@ -37,7 +38,7 @@ class Panel extends Component {
           <PanelAction title="Logout" icon="power_settings_new" />
           <PanelAction title="Profile" icon="person" />
           <PanelAction title="Settings" icon="build" />
-          <PanelAction title="Theme" icon="color_lens" />
+          <PanelAction title="Theme" icon="color_lens" to="/" />
         </PanelActionWrapper>
       </PanelContainer>
     );

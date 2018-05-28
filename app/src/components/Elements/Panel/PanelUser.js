@@ -13,7 +13,7 @@ class PanelUser extends Component {
           <div
             className="panel-user-avatar"
             style={{
-              backgroundImage: `url${this.props.image}`
+              backgroundImage: `url('${this.props.image}')`
             }}
           />
         ) : (
