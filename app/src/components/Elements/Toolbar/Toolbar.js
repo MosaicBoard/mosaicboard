@@ -7,11 +7,26 @@
 
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import {
+  Menu,
+  MenuDivider,
+  MenuItem,
+  Popover,
+  Position
+} from '@blueprintjs/core';
 
 import './Toolbar.css';
 
 class Toolbar extends Component {
   render() {
+    const addMenu = (
+      <Menu>
+        <MenuDivider title="Add new" />
+        <MenuItem icon="dashboard" text="Dashboard" />
+        <MenuItem icon="widget-header" text="Widget" />
+      </Menu>
+    );
+
     return (
       <div className="toolbar">
         <div className="toolbar-inner">
@@ -26,9 +41,9 @@ class Toolbar extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/">
+              <Popover content={addMenu} position={Position.RIGHT_BOTTOM}>
                 <i className="md-icon">add</i>
-              </NavLink>
+              </Popover>
             </li>
             <li>
               <NavLink to="/">
