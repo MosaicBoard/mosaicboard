@@ -13,6 +13,7 @@ body {
   height: 100%;
   font-family: $font-family;
   font-size: $font-size;
+  line-height: 1.15;
   color: $color-font;
 
   -webkit-font-smoothing: antialiased;
@@ -20,7 +21,12 @@ body {
 
 a {
   color: $color-font;
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: $color-font;
+  text-decoration: none !important;
 }
 
 .md-icon {

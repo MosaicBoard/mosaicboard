@@ -11,12 +11,9 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
-// TODO: Blueprint CSS broken the UI,
-// because the `*.scss` share the same CSS names.
-
 // Blueprint is a React-based UI toolkit for the web
-// import '@blueprintjs/core/lib/css/blueprint.css';
-// import '@blueprintjs/icons/lib/css/blueprint-icons.css';
+import '@blueprintjs/core/lib/css/blueprint.css';
+import '@blueprintjs/icons/lib/css/blueprint-icons.css';
 import './styles/app.css';
 
 import reducers from './reducers';

@@ -16,7 +16,7 @@ class MenuSwitchDashboard extends Component {
 
   render() {
     return (
-      <h1 className="sidebar-title-wrapper">
+      <div className="sidebar-title-wrapper">
         <div
           className="sidebar-title-inner"
           onClick={this.toggleBodyClass.bind(this)}
@@ -55,7 +55,7 @@ class MenuSwitchDashboard extends Component {
             </div>
           </div>
         </div>
-      </h1>
+      </div>
     );
   }
 }
