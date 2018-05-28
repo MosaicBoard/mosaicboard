@@ -10,17 +10,13 @@ import PanelActionWrapper from './PanelActionWrapper';
 import PanelAction from './PanelAction';
 
 import './Panel.css';
-import avatar from '../../../images/avatar.jpeg';
+import user from '../../../images/user.jpeg';
 
 class Panel extends Component {
   render() {
     return (
       <PanelContainer>
-        <PanelUser
-          name="Breno Polanski"
-          subtitle="Meteorite BI"
-          image={avatar}
-        />
+        <PanelUser name="Breno Polanski" subtitle="Meteorite BI" image={user} />
 
         <PanelListWrapper>
           <PanelListTitle>Help</PanelListTitle>

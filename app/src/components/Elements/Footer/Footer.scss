@@ -1,0 +1,67 @@
+/**
+ * Copyright (c) 2018-present, MosaicBoard.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+@import 'susy/sass/susy';
+@import 'styles/helpers/variables';
+
+.footer {
+  margin: 0;
+  padding: 30px 60px;
+  font-size: 13px;
+  border-top: 1px solid rgba(#000, 0.06);
+
+  @include susy-clearfix();
+
+  @media (max-width: $media-md) {
+    padding: 30px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include susy-clearfix();
+
+    @media (max-width: $media-md) {
+      margin-top: 20px;
+      border-top: 1px solid rgba(#000, 0.06);
+    }
+
+    li {
+      float: left;
+      margin: 0 0 0 25px;
+
+      a {
+        display: block;
+      }
+
+      @media (max-width: $media-md) {
+        float: none;
+        margin: 20px 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.footer-left {
+  line-height: 1.5;
+
+  @media (min-width: $media-md) {
+    float: left;
+  }
+}
+
+.footer-right {
+  @media (min-width: $media-md) {
+    float: right;
+  }
+}
