@@ -23,6 +23,12 @@ class Panel extends Component {
 
         <PanelListWrapper>
           <PanelListTitle>Help</PanelListTitle>
+
+          <PanelList>
+            <PanelListItem>Lorem ipsum dolor sit amet</PanelListItem>
+            <PanelListItem>Lorem ipsum dolor sit amet</PanelListItem>
+            <PanelListItem>Lorem ipsum dolor sit amet</PanelListItem>
+          </PanelList>
         </PanelListWrapper>
 
         <PanelActionWrapper>
