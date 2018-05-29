@@ -40,7 +40,6 @@ class Toolbar extends Component {
               <Tooltip
                 content={<span>Dashboards</span>}
                 position={Position.RIGHT}
-                usePortal={false}
               >
                 <NavLink to="/">
                   <i className="md-icon">dashboard</i>
@@ -49,11 +48,7 @@ class Toolbar extends Component {
             </li>
             <li>
               <Popover content={addMenu} position={Position.RIGHT_BOTTOM}>
-                <Tooltip
-                  content={<span>New</span>}
-                  position={Position.RIGHT}
-                  usePortal={false}
-                >
+                <Tooltip content={<span>New</span>} position={Position.RIGHT}>
                   <a
                     href="#add"
                     onClick={e => {
@@ -69,7 +64,6 @@ class Toolbar extends Component {
               <Tooltip
                 content={<span>Change Background</span>}
                 position={Position.RIGHT}
-                usePortal={false}
               >
                 <NavLink to="/">
                   <i className="md-icon">image</i>
@@ -80,7 +74,6 @@ class Toolbar extends Component {
               <Tooltip
                 content={<span>Public URLs</span>}
                 position={Position.RIGHT}
-                usePortal={false}
               >
                 <NavLink to="/">
                   <i className="md-icon">link</i>
@@ -88,11 +81,7 @@ class Toolbar extends Component {
               </Tooltip>
             </li>
             <li>
-              <Tooltip
-                content={<span>TV Mode</span>}
-                position={Position.RIGHT}
-                usePortal={false}
-              >
+              <Tooltip content={<span>TV Mode</span>} position={Position.RIGHT}>
                 <NavLink to="/">
                   <i className="md-icon">tv</i>
                 </NavLink>
@@ -102,7 +91,6 @@ class Toolbar extends Component {
               <Tooltip
                 content={<span>Export Dashboard</span>}
                 position={Position.RIGHT}
-                usePortal={false}
               >
                 <NavLink to="/">
                   <i className="md-icon">file_download</i>
@@ -113,7 +101,6 @@ class Toolbar extends Component {
               <Tooltip
                 content={<span>Duplicate Dashboard</span>}
                 position={Position.RIGHT}
-                usePortal={false}
               >
                 <NavLink to="/">
                   <i className="md-icon">filter_none</i>
@@ -127,7 +114,6 @@ class Toolbar extends Component {
               <Tooltip
                 content={<span>Settings</span>}
                 position={Position.RIGHT}
-                usePortal={false}
               >
                 <NavLink to="/">
                   <i className="md-icon">settings</i>
@@ -135,11 +121,7 @@ class Toolbar extends Component {
               </Tooltip>
             </li>
             <li>
-              <Tooltip
-                content={<span>Logout</span>}
-                position={Position.RIGHT}
-                usePortal={false}
-              >
+              <Tooltip content={<span>Logout</span>} position={Position.RIGHT}>
                 <NavLink to="/">
                   <i className="md-icon">power_settings_new</i>
                 </NavLink>
