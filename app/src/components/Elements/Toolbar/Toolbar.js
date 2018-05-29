@@ -37,15 +37,15 @@ class Toolbar extends Component {
 
           <ul className="top">
             <li>
-              <NavLink to="/">
-                <Tooltip
-                  content={<span>Dashboards</span>}
-                  position={Position.RIGHT}
-                  usePortal={false}
-                >
+              <Tooltip
+                content={<span>Dashboards</span>}
+                position={Position.RIGHT}
+                usePortal={false}
+              >
+                <NavLink to="/">
                   <i className="md-icon">dashboard</i>
-                </Tooltip>
-              </NavLink>
+                </NavLink>
+              </Tooltip>
             </li>
             <li>
               <Popover content={addMenu} position={Position.RIGHT_BOTTOM}>
@@ -54,89 +54,96 @@ class Toolbar extends Component {
                   position={Position.RIGHT}
                   usePortal={false}
                 >
-                  <i className="md-icon">add</i>
+                  <a
+                    href="#add"
+                    onClick={e => {
+                      e.preventDefault();
+                    }}
+                  >
+                    <i className="md-icon">add</i>
+                  </a>
                 </Tooltip>
               </Popover>
             </li>
             <li>
-              <NavLink to="/">
-                <Tooltip
-                  content={<span>Change Background</span>}
-                  position={Position.RIGHT}
-                  usePortal={false}
-                >
+              <Tooltip
+                content={<span>Change Background</span>}
+                position={Position.RIGHT}
+                usePortal={false}
+              >
+                <NavLink to="/">
                   <i className="md-icon">image</i>
-                </Tooltip>
-              </NavLink>
+                </NavLink>
+              </Tooltip>
             </li>
             <li>
-              <NavLink to="/">
-                <Tooltip
-                  content={<span>Public URLs</span>}
-                  position={Position.RIGHT}
-                  usePortal={false}
-                >
+              <Tooltip
+                content={<span>Public URLs</span>}
+                position={Position.RIGHT}
+                usePortal={false}
+              >
+                <NavLink to="/">
                   <i className="md-icon">link</i>
-                </Tooltip>
-              </NavLink>
+                </NavLink>
+              </Tooltip>
             </li>
             <li>
-              <NavLink to="/">
-                <Tooltip
-                  content={<span>TV Mode</span>}
-                  position={Position.RIGHT}
-                  usePortal={false}
-                >
+              <Tooltip
+                content={<span>TV Mode</span>}
+                position={Position.RIGHT}
+                usePortal={false}
+              >
+                <NavLink to="/">
                   <i className="md-icon">tv</i>
-                </Tooltip>
-              </NavLink>
+                </NavLink>
+              </Tooltip>
             </li>
             <li>
-              <NavLink to="/">
-                <Tooltip
-                  content={<span>Export Dashboard</span>}
-                  position={Position.RIGHT}
-                  usePortal={false}
-                >
+              <Tooltip
+                content={<span>Export Dashboard</span>}
+                position={Position.RIGHT}
+                usePortal={false}
+              >
+                <NavLink to="/">
                   <i className="md-icon">file_download</i>
-                </Tooltip>
-              </NavLink>
+                </NavLink>
+              </Tooltip>
             </li>
             <li>
-              <NavLink to="/">
-                <Tooltip
-                  content={<span>Duplicate Dashboard</span>}
-                  position={Position.RIGHT}
-                  usePortal={false}
-                >
+              <Tooltip
+                content={<span>Duplicate Dashboard</span>}
+                position={Position.RIGHT}
+                usePortal={false}
+              >
+                <NavLink to="/">
                   <i className="md-icon">filter_none</i>
-                </Tooltip>
-              </NavLink>
+                </NavLink>
+              </Tooltip>
             </li>
           </ul>
 
           <ul className="bottom">
             <li>
-              <NavLink to="/">
-                <Tooltip
-                  content={<span>Settings</span>}
-                  position={Position.RIGHT}
-                  usePortal={false}
-                >
+              <Tooltip
+                content={<span>Settings</span>}
+                position={Position.RIGHT}
+                usePortal={false}
+              >
+                <NavLink to="/">
                   <i className="md-icon">settings</i>
-                </Tooltip>
-              </NavLink>
+                </NavLink>
+              </Tooltip>
             </li>
             <li>
-              <NavLink to="/">
-                <Tooltip
-                  content={<span>Logout</span>}
-                  position={Position.RIGHT}
-                  usePortal={false}
-                >
+              <Tooltip
+                content={<span>Logout</span>}
+                position={Position.RIGHT}
+                usePortal={false}
+              >
+                <NavLink to="/">
                   <i className="md-icon">power_settings_new</i>
-                </Tooltip>
-              </NavLink>
+                </NavLink>
+              </Tooltip>
             </li>
           </ul>
         </div>
