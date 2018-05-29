@@ -12,7 +12,8 @@ import {
   MenuDivider,
   MenuItem,
   Popover,
-  Position
+  Position,
+  Tooltip
 } from '@blueprintjs/core';
 
 import './Toolbar.css';
@@ -37,37 +38,79 @@ class Toolbar extends Component {
           <ul className="top">
             <li>
               <NavLink to="/">
-                <i className="md-icon">dashboard</i>
+                <Tooltip
+                  content={<span>Dashboards</span>}
+                  position={Position.RIGHT}
+                  usePortal={false}
+                >
+                  <i className="md-icon">dashboard</i>
+                </Tooltip>
               </NavLink>
             </li>
             <li>
               <Popover content={addMenu} position={Position.RIGHT_BOTTOM}>
-                <i className="md-icon">add</i>
+                <Tooltip
+                  content={<span>New</span>}
+                  position={Position.RIGHT}
+                  usePortal={false}
+                >
+                  <i className="md-icon">add</i>
+                </Tooltip>
               </Popover>
             </li>
             <li>
               <NavLink to="/">
-                <i className="md-icon">image</i>
+                <Tooltip
+                  content={<span>Change Background</span>}
+                  position={Position.RIGHT}
+                  usePortal={false}
+                >
+                  <i className="md-icon">image</i>
+                </Tooltip>
               </NavLink>
             </li>
             <li>
               <NavLink to="/">
-                <i className="md-icon">link</i>
+                <Tooltip
+                  content={<span>Public URLs</span>}
+                  position={Position.RIGHT}
+                  usePortal={false}
+                >
+                  <i className="md-icon">link</i>
+                </Tooltip>
               </NavLink>
             </li>
             <li>
               <NavLink to="/">
-                <i className="md-icon">tv</i>
+                <Tooltip
+                  content={<span>TV Mode</span>}
+                  position={Position.RIGHT}
+                  usePortal={false}
+                >
+                  <i className="md-icon">tv</i>
+                </Tooltip>
               </NavLink>
             </li>
             <li>
               <NavLink to="/">
-                <i className="md-icon">file_download</i>
+                <Tooltip
+                  content={<span>Export Dashboard</span>}
+                  position={Position.RIGHT}
+                  usePortal={false}
+                >
+                  <i className="md-icon">file_download</i>
+                </Tooltip>
               </NavLink>
             </li>
             <li>
               <NavLink to="/">
-                <i className="md-icon">filter_none</i>
+                <Tooltip
+                  content={<span>Duplicate Dashboard</span>}
+                  position={Position.RIGHT}
+                  usePortal={false}
+                >
+                  <i className="md-icon">filter_none</i>
+                </Tooltip>
               </NavLink>
             </li>
           </ul>
@@ -75,12 +118,24 @@ class Toolbar extends Component {
           <ul className="bottom">
             <li>
               <NavLink to="/">
-                <i className="md-icon">settings</i>
+                <Tooltip
+                  content={<span>Settings</span>}
+                  position={Position.RIGHT}
+                  usePortal={false}
+                >
+                  <i className="md-icon">settings</i>
+                </Tooltip>
               </NavLink>
             </li>
             <li>
               <NavLink to="/">
-                <i className="md-icon">power_settings_new</i>
+                <Tooltip
+                  content={<span>Logout</span>}
+                  position={Position.RIGHT}
+                  usePortal={false}
+                >
+                  <i className="md-icon">power_settings_new</i>
+                </Tooltip>
               </NavLink>
             </li>
           </ul>

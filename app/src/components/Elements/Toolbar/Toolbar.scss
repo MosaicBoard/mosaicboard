@@ -57,11 +57,11 @@
       margin: 0 0 5px 0;
     }
 
-    ul,
-    span,
-    strong {
-      display: none;
-    }
+    // ul,
+    // span,
+    // strong {
+    //   display: none;
+    // }
   }
 
   strong {
@@ -72,6 +72,10 @@
     @media (min-width: $media-lg) {
       position: absolute;
       bottom: 0;
+    }
+
+    span.pt-popover-wrapper {
+      display: block;
     }
   }
 
