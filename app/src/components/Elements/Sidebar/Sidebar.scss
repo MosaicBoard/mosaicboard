@@ -8,8 +8,9 @@
 @import 'styles/helpers/variables';
 
 .sidebar {
-  position: relative;
+  position: absolute;
   z-index: 100;
+  left: 64px;
   box-sizing: border-box;
   width: 260px;
   min-width: 260px;

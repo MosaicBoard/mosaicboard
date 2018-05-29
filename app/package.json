@@ -1,6 +1,12 @@
 {
   "name": "MosaicBoard",
-  "version": "0.0.1",
+  "description": "The ultimate Free Open Source Solution to create dashboards",
+  "homepage": "http://mosaicboard.org",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MosaicBoard/mosaicboard.git"
+  },
   "scripts": {
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
@@ -22,7 +28,6 @@
     "@blueprintjs/core": "^2.3.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-mosaic-component": "^1.1.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-transition-group": "^2.3.1",
