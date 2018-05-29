@@ -10,7 +10,7 @@
 
 ---
 
-**IMPORTANT NOTE**: Please don't submit issues for questions regarding your code. Only actual bugs or feature requests will be answered, all others will be closed without comment.
+:warning: **IMPORTANT NOTE**: Please don't submit issues for questions regarding your code. Only actual bugs or feature requests will be answered, all others will be closed without comment.
 
 ## Support MosaicBoard development
 
@@ -19,6 +19,8 @@
 No time to help out? You can support MosaicBoard development by sending money!
 
 Money: [![Donate to author](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WNXA4YYGQCJZG)
+
+:hammer_and_wrench: We're looking for the people to help maintain and improve MosaicBoard. Interested? [Click here](https://github.com/MosaicBoard/mosaicboard/issues/15).
 
 ## Mockups
 
