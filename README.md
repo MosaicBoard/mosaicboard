@@ -8,6 +8,18 @@
 
 <h3 align="center">The ultimate Free Open Source Solution to create dashboards.</h3>
 
+---
+
+**IMPORTANT NOTE**: Please don't submit issues for questions regarding your code. Only actual bugs or feature requests will be answered, all others will be closed without comment.
+
+## Support MosaicBoard development
+
+<img src="http://i.imgur.com/mpwi4lf.jpg">
+
+No time to help out? You can support MosaicBoard development by sending money!
+
+Money: [![Donate to author](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WNXA4YYGQCJZG)
+
 ## Mockups
 
 | <img src="https://raw.githubusercontent.com/MosaicBoard/mockups/master/01-login.png" width="440" height="247"> | <img src="https://raw.githubusercontent.com/MosaicBoard/mockups/master/06-dashboard_full.png" width="440" height="247"> |
